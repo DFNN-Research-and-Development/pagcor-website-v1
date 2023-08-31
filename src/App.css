@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.test {
+  background-color: #b15959 !important;
+}
+
+.fontColor{
+  color: #1E3699 !important;
+  margin-left: auto;
+}
