@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
 
 body{
   margin: 0;
@@ -31,9 +31,24 @@ body{
   line-height: normal;
 }
 
-@media (min-width:768px){
+@media (max-width:360px){
   .barBorderClr{
-    margin: 0 !important;
+    margin-right: 0 !important; 
+  }
+  .test {
+    display: none !important;
+  }
+  .test1{
+    padding-left: 0 !important;
+  }
+  .newGames{
+    padding: 0 !important;
+  }
+  .newGames h1{
+    font-size: 24px !important;
+  }
+  .newGames span{
+    display:  none !important;
   }
 }
 
@@ -66,7 +81,6 @@ body{
 }
 
 .test2 {
-  height: 391px !important;
   background: linear-gradient(270deg, #BE2227 0.09%, #1E3699 76.65%);
 
 }
@@ -81,20 +95,38 @@ body{
 }
 
 .number{
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
 }
 
 .number h1{
+  color: #FFF;
   text-align: center;
   font-family: Inter;
-  font-size: 64px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  background: linear-gradient(180deg, #BE2227 20.78%, #1E3699 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1 !important;
+}
+
+.number h3{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.newGames h1{
+  color: #1E3699;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.newGames {
+  display: flex !important;
+  justify-content: center !important;
 }
