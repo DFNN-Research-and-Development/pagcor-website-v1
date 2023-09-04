@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden !important;
+  background: black !important;
+  font-family: 'Inter', sans-serif !important;
 }
-
+#Nav-BG{
+  background: black !important;
+}
 .fontColor{
   color: #1E3699 !important;
   margin-left: auto;
 }
 
 .barText{
-  color: #1E3699 !important;
+  color: #FFFF !important;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -30,17 +34,15 @@ body{
   font-weight: 500;
   line-height: normal;
 }
-
-@media (min-width:768px){
-  .barBorderClr{
-    margin: 0 !important;
-  }
-}
-
-
-.test1{
+.header-text-format{
   text-align: start;
-  margin-top: auto !important;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  
+}
+.carousel-header-bg{
+  background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%);
 }
 
 .test{
@@ -48,53 +50,115 @@ body{
   justify-content: end;
 }
 
-.test1 h3{
-  color: #BE2227;
-  font-family: Inter;
+.header-text-format h3{
+  color: #FFF;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.test1 p {
-  color: #1E3699;
+.header-text-format p {
+  color: #FFF;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 }
-
-.test2 {
-  height: 391px !important;
+.section-one {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+ color: white;
+}
+.section-one h1{
+  font-weight: 600;
+}
+.section-two {
   background: linear-gradient(270deg, #BE2227 0.09%, #1E3699 76.65%);
-
+  border-radius: 3rem;
+  padding: 1rem;
 }
 
-.ahoy{
-  color: #FFF;
+.section-two h1{
+  color: white !important;
   text-align: center;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
 }
 
 .number{
   display: flex;
   justify-content: space-evenly;
 }
-
-.number h1{
+.number-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  margin: 1rem;
+}
+.number-info h1{
+  text-transform: uppercase;
   text-align: center;
-  font-family: Inter;
-  font-size: 64px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
-  background: linear-gradient(180deg, #BE2227 20.78%, #1E3699 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1 !important;
+  color: white !important;
+}
+.number-info p{
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  color: white !important;
+}
+
+
+/* Login */
+.login-label{
+  font-weight: 900;
+  font-size: 3rem;
+}
+.login-bg{
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: linear-gradient(#bb3136, #1E3699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-float-card{
+  width: 90%;
+}
+.login-card{
+  height: 90% !important;
+  /* border: 2px solid black; */
+  box-shadow: .1rem .1rem 1rem black !important;
+  border-radius: 1rem;
+  background: white;
+}
+.login_image{
+  background-image: url("../src/assets/login_image.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit: contain;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius:  0rem 1rem 1rem 0rem;
+}
+
+@media (min-width:768px){
+  .barBorderClr{
+    margin: 0 !important;
+  }
+}
+
+/* Footer */
+.footer-background{
+  background: #D1D1D1DB;
+}
+.footer-background ul{
+  list-style: none  !important;
+  padding: 0 !important;
+  /* margin: 0 !important; */
 }
