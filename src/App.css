@@ -17,6 +17,7 @@ body{
 }
 #Nav-BG{
   background: black !important;
+  padding: 2rem 2rem 2rem 2rem !important;
 }
 
 /* Global */
@@ -57,7 +58,8 @@ body{
   
 }
 .carousel-header-bg{
-  background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%);
+  /* background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%); */
+  background-color: transparent !important;
 }
 
 .test{

@@ -9,6 +9,9 @@ import BG from "../assets/BG.png";
 import num1 from "../assets/num1.png";
 import num2 from "../assets/num2.png";
 import num3 from "../assets/num3.png";
+import testBanners1 from "../assets/test-banners/jili-web.png";
+import testBanners2 from "../assets/test-banners/pg-web.png";
+import testBanners3 from "../assets/test-banners/rtg-web.png";
 import LG1 from "../assets/latest-games/blackjack.png"
 import LG2 from "../assets/latest-games/color-game.png"
 import LG3 from "../assets/latest-games/mariachi.png"
@@ -34,6 +37,7 @@ import iconRolette from "../assets/icons/Roulette.png"
 
 
 function Home() {
+  const testBannersArray =[testBanners1,testBanners2,testBanners3]
   const latestGames =[LG1,LG2,LG3,LG4,LG5]
   const slotGames =[SG1,SG2,SG3,SG4,SG5]
   const bingoGames =[BG1,BG2,BG3,BG4,BG5]
@@ -69,21 +73,48 @@ function Home() {
 
     ]
   };
+  var headerSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 3,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 3
+          }
+      },
+      {
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2
+          }
+      }
+
+    ]
+  };
   return (
     <div className='img-bg'>
       <AppNavBar/>
       <div className='mb-5 carousel-header-bg'>
-        <Row className=''>
-          <Col lg={4} className='header-text-format ms-5 py-5'>
-            <div className=''>
-              <h3 className='ms-3'>PLAY AND HAVE FUN</h3>
-              <p className='ms-3'>Welcome to PAGCOR Gaming Website, where excitement and fortune await you around every virtual corner. Indulge in a world of exhilarating games, from classic card tables to cutting-edge slots, all within a secure and regulated online environment. Join us today to experience the thrill of winning while enjoying the peace of mind that comes with a fully authorized and trustworthy gaming platform.</p>
-            </div>
-          </Col>
-          {/* <Col className='test'>
-            <img src={BG} alt="" />
-          </Col> */}
-        </Row>
+            <Slider {...headerSettings} className="">
+                    {testBannersArray.map((latest) => (
+                    <div className=''>
+                      <img src={latest} className="w-100" alt="" />
+                    </div>
+                    ))}
+            </Slider>
       </div>
       <Container>
         <div className='section-one my-5'>
