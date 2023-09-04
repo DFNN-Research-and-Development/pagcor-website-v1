@@ -19,13 +19,13 @@ function AppNavBar() {
 	    <Navbar.Collapse id="basic-navbar-nav">
 
 	       	<Nav className="ms-auto">
-	           <Nav.Link as={ NavLink } to="" end id="text" className='barText rounded me-5 px-4'>Home</Nav.Link>
-	           <Nav.Link as={ NavLink } to="" end id="text" className='barText me-5'>Games</Nav.Link>
-			   <Nav.Link as={ NavLink } to="" end id="text" className='barText me-5'>Branches</Nav.Link>
-	           <Nav.Link as={ NavLink } to="" end id="text" className='barText me-5'>About Us</Nav.Link>
-			   <Nav.Link as={ NavLink } to="" end id="text" className='barText me-5'>Contact US</Nav.Link>
+	           <Nav.Link as={ NavLink } to="" end id="text" className='barText rounded me-2 px-4'>Home</Nav.Link>
+	           <Nav.Link as={ NavLink } to="" end id="text" className='barText me-2'>Games</Nav.Link>
+			   <Nav.Link as={ NavLink } to="" end id="text" className='barText me-2'>Branches</Nav.Link>
+	           <Nav.Link as={ NavLink } to="" end id="text" className='barText me-2'>About Us</Nav.Link>
+			   <Nav.Link as={ NavLink } to="" end id="text" className='barText me-2'>Contact US</Nav.Link>
 			   <Nav.Link as={ NavLink } to="" end id="text" className='barText px-4 me-2'>Register</Nav.Link>
-			   <Nav.Link as={ NavLink } to="" end id="text" className='barText px-4 me-5'>Sign-up</Nav.Link>
+			   <Nav.Link as={ NavLink } to="" end id="text" className='barText px-4 me-4'>Sign-up</Nav.Link>
 			</Nav>
 	  
 	    </Navbar.Collapse> 

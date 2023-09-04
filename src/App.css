@@ -8,9 +8,24 @@ body{
   background: black !important;
   font-family: 'Inter', sans-serif !important;
 }
+.img-bg{
+  background-image: url("./assets/pagcor-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 #Nav-BG{
   background: black !important;
 }
+
+/* Global */
+.global-head{
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+
 .fontColor{
   color: #1E3699 !important;
   margin-left: auto;
@@ -65,6 +80,8 @@ body{
   font-style: normal;
   font-weight: 500;
 }
+
+
 .section-one {
  display: flex;
  justify-content: center;
@@ -72,18 +89,32 @@ body{
  text-align: center;
  color: white;
 }
-.section-one h1{
-  font-weight: 600;
-}
 .section-two {
-  background: linear-gradient(270deg, #BE2227 0.09%, #1E3699 76.65%);
+  background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%);
   border-radius: 3rem;
   padding: 1rem;
 }
 
-.section-two h1{
+.section-two h2{
   color: white !important;
   text-align: center;
+}
+
+/* Home Promotion */
+.promotion-box{
+  border-radius: 14px;
+  border: 1px solid rgba(4, 0, 250, 0.01);
+  background: rgba(4, 0, 250, 0.29); 
+  backdrop-filter: blur(6.599999904632568px); 
+  height: 100%;
+  min-height: 35vh;
+  width: 100%;
+}
+
+/* Gaming Partners */
+.column-partners{
+  display: flex;
+  justify-content: center;
 }
 
 .number{
@@ -105,6 +136,7 @@ body{
   color: white !important;
 }
 .number-info p{
+  padding: 0 2rem;
   text-transform: uppercase;
   text-align: center;
   font-style: normal;
@@ -146,10 +178,16 @@ body{
   width: 100% !important;
   border-radius:  0rem 1rem 1rem 0rem;
 }
-
-@media (min-width:768px){
-  .barBorderClr{
-    margin: 0 !important;
+@media (max-width:1082px){
+  /* Navbar */
+  .barText{
+    font-size: .8rem !important;
+  }
+}
+@media (max-width:991px){
+  /* Gaming Partners */
+  .column-partners{
+    padding: 2rem 5rem !important;
   }
 }
 
@@ -161,4 +199,12 @@ body{
   list-style: none  !important;
   padding: 0 !important;
   /* margin: 0 !important; */
+}
+.footer-background a{
+  text-decoration: none!important;
+  color: black !important;
+}
+.social-links{
+  font-size: 2rem !important;
+  margin: 0 .5rem;
 }
