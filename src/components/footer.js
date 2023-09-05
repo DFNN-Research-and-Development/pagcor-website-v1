@@ -1,13 +1,7 @@
 import React from 'react'
 import { Col, Form, Card, Row, Button, Container } from "react-bootstrap"
-// import { Box, Grid, Typography, Container, Divider } from '@mui/material'
-import PAGCOR from '../assets/pagcor-logo.png'
-// import gaming421 from '../assets/img/21+.png'
-import { BsGeoAltFill, BsPhoneVibrateFill, BsSendFill, BsTelephoneFill, BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPenNib } from '@fortawesome/free-solid-svg-icons'
 import { Facebook, Instagram, Twitter } from 'react-bootstrap-icons';
-import PC1 from "../assets/payment-channels/fortunepay.png";
+import PC1 from "../assets/payment-channels/fp.png";
 import PC2 from "../assets/payment-channels/GCash.png";
 import PC3 from "../assets/payment-channels/MAYA.png";
 import PC4 from "../assets/payment-channels/QRPHh.png";
@@ -39,7 +33,7 @@ const Footer = () => {
     }
     return (
         <>
-            <div className='footer-background px-5'>
+            <div className='footer-background px-lg-5 px-3'>
                 <Row className="p-4">
                     <Col lg={8}>
                         <Row>
@@ -56,7 +50,7 @@ const Footer = () => {
                             <Col lg={8} md={6} sm={12}>
                                 <h3>Quick Links</h3>
                                 <Row>
-                                    <Col lg={4} md={6}>
+                                    <Col lg={4} md={6} className="footer-center-mobile">
                                         <ul>
                                             <li><a href='/'>About Us</a></li>
                                             <li><a href='/'>Branches</a></li>
@@ -65,7 +59,7 @@ const Footer = () => {
                                             <li><a href='/'>Responsible Gaming</a></li>
                                         </ul>
                                     </Col>
-                                    <Col lg={8} md={6}>
+                                    <Col lg={8} md={6} className="footer-center-mobile">
                                         <ul>
                                             <li><a href='/'>Contact Us</a></li>
                                             <li><a href='/'>CSR</a></li>
@@ -75,7 +69,7 @@ const Footer = () => {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col lg={4} sm={12}>
+                            <Col className='marg-Y-991' lg={4} sm={12}>
                                 <h3>Social Links</h3>
                                 <div>
                                     {/* <FontAwesomeIcon icon="check-square" /> */}
@@ -97,15 +91,15 @@ const Footer = () => {
                         <div>
                             <h3>Payment Channels</h3>
                                 <div>
-                                    <Row className="d-flex justify-content-center align-items-center">
+                                    <Row>
                                         {paymentChannels.map((payment) => (
-                                            <Col lg={4} sm={6} className="column-partners">
+                                            <Col lg={4} sm={6} xs={6} className="column-partners p-0">
                                             <img className='img-fluid w-75' src={payment}/>
                                             </Col>
                                             ))}
                                     </Row>
                                 </div>
-                            <div>
+                            <div className='copyright'>
                                 <p>© 2023 Casino Filipino Online
                                 All Rights Reserved</p>
                             </div>

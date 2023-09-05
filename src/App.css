@@ -15,10 +15,6 @@ body{
   background-size: cover;
 
 }
-#Nav-BG{
-  background: black !important;
-  padding: 2rem 2rem 2rem 2rem !important;
-}
 
 /* Global */
 .global-head{
@@ -26,21 +22,16 @@ body{
   font-weight: 500;
   color: white;
 }
-
+hr {
+  margin: 3rem 0rem !important;
+  border: 0;
+  border-top: 2px solid white !important;
+  width: 100%;
+}
 .fontColor{
   color: #1E3699 !important;
   margin-left: auto;
 }
-
-.barText{
-  color: #FFFF !important;
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .barBorderClr{
   background-color: #BE2227 !important;
   color: #FFF !important;
@@ -50,31 +41,37 @@ body{
   font-weight: 500;
   line-height: normal;
 }
-.header-text-format{
-  text-align: start;
-  display: flex;
-  align-items: center;
-  /* flex-direction: column; */
-  
+
+/* Navbar */
+#Nav-BG{
+  background: black !important;
+  padding: 2rem 2rem 2rem 2rem !important;
 }
+.barText{
+  color: #FFFF !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Header */
 .carousel-header-bg{
-  /* background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%); */
-  background-color: transparent !important;
-}
-
-.test{
+  background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%);
+  /* background-color: transparent !important; */
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.header-text-format h3{
+.header-text-format h1{
+  text-align: left !important;
   color: #FFF;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-
 .header-text-format p {
   color: #FFF;
   font-family: Inter;
@@ -82,8 +79,11 @@ body{
   font-style: normal;
   font-weight: 500;
 }
+.padding-header-text{
+  padding: 0 0 0 4rem !important ;
+}
 
-
+/* Asia's Friendliest */
 .section-one {
  display: flex;
  justify-content: center;
@@ -91,15 +91,39 @@ body{
  text-align: center;
  color: white;
 }
+
+/* Numbers */
 .section-two {
   background: linear-gradient(360deg, #BE2227 0.09%, #1E3699 76.65%);
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 2rem 4rem;
 }
-
 .section-two h2{
   color: white !important;
   text-align: center;
+}
+.number{
+  display: flex;
+  justify-content: space-evenly;
+}
+.number-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
+.number-info h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  color: white !important;
+}
+.number-info p{
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  color: white !important;
 }
 
 /* Home Promotion */
@@ -119,32 +143,25 @@ body{
   justify-content: center;
 }
 
-.number{
-  display: flex;
-  justify-content: space-evenly;
+/* Footer */
+.footer-background{
+  background: #D1D1D1DB;
+  color: #203354 !important;
 }
-.number-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
-  align-items: center;
-  margin: 1rem;
+.footer-background ul{
+  list-style: none  !important;
+  padding: 0 !important;
+  /* margin: 0 !important; */
 }
-.number-info h1{
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  font-weight: 800;
-  color: white !important;
+.footer-background a{
+  text-decoration: none!important;
+  color: #203354 !important;
 }
-.number-info p{
-  padding: 0 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  color: white !important;
+.social-links{
+  font-size: 2rem !important;
+  margin: 0 .5rem;
+  color: #203354 !important;
 }
-
 
 /* Login */
 .login-label{
@@ -180,33 +197,105 @@ body{
   width: 100% !important;
   border-radius:  0rem 1rem 1rem 0rem;
 }
+
+@media (max-width:1200px){
+  /* Navbar */
+  .barText{
+    font-size: .8rem !important;
+  }
+
+  /* Numbers */
+  .number{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .number-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    margin: 1rem;
+  }
+  .number-info h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    color: white !important;
+    font-size: 2rem;
+  }
+  .number-info p{
+    padding: 0 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-size: .8rem;
+    color: white !important;
+  }
+}
+
 @media (max-width:1082px){
   /* Navbar */
   .barText{
     font-size: .8rem !important;
   }
 }
+
 @media (max-width:991px){
+  /* global */
+  .marg-Y-991{
+    margin: 1rem 0;
+  }
+
+  /* header */
+  .padding-header-text{
+    text-align: center;
+    padding: 2rem !important;
+  }
+  .header-text-format h1{
+    text-align: center !important;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
   /* Gaming Partners */
   .column-partners{
     padding: 2rem 5rem !important;
   }
 }
 
-/* Footer */
-.footer-background{
-  background: #D1D1D1DB;
+@media (max-width:577px){
+  /* header */
+  .padding-header-text{
+    text-align: center;
+    padding: 2rem !important;
+  }
+  .header-text-format h1{
+    text-align: center !important;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  /* Gaming Partners */
+  .column-partners{
+    padding: 2rem !important;
+  }
+
+  /* footer */
+  .copyright{
+    margin: 2rem 0 0 0 !important;
+    text-align: center;
+  }
+  .footer-center-mobile{
+    display: flex;
+    justify-content: left !important;
+    flex-direction: column;
+  }
 }
-.footer-background ul{
-  list-style: none  !important;
-  padding: 0 !important;
-  /* margin: 0 !important; */
-}
-.footer-background a{
-  text-decoration: none!important;
-  color: black !important;
-}
-.social-links{
-  font-size: 2rem !important;
-  margin: 0 .5rem;
-}
+
